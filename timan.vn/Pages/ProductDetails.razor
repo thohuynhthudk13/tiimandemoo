@@ -1,0 +1,68 @@
+﻿@page "/productdetail/{id}"
+@inherits ProductDetailsBase
+
+<h3>ProductDetails</h3>
+
+<h1></h1>
+
+<div class="layout">
+    <span class="card-body text-center">
+        <img class="img" src="@productList.Photo" />
+    </span>
+    <div class="col-md-7 col-sm-12 position-relative">
+        <div class="detail">
+            <h3 class="Pname">@productList.ProductName </h3>
+
+            <span class="ratestar">4.61</span>
+            <span class="start">
+                <i class="fas fa-star fas1"></i>
+                <i class="fas fa-star fas1"></i>
+                <i class="fas fa-star fas1"></i>
+                <i class="fas fa-star fas1"></i>
+                <i class="fas fa-star-half fas1"></i>
+            </span>
+            <span class="proDe"> 
+                @productList.Rate Đánh giá</span>
+
+            <span class="proDe">  
+                @productList.Sold Đã bán </span>
+            <span class="proDe"> 
+                Tình trạng: @productList.Status</span>
+        </div>
+        <div>
+            <div pricedt>@productList.Price</div>
+            <div class="desSub">
+                <div class="det">
+                    <span class="oi">
+                        <i class="fas fa-sync"></i>
+                        @productList.Desc1
+                    </span>
+                </div>
+                <div class="det">
+                    <span class="oi">
+                        <i class="fas fa-ribbon"></i>                  
+                        @productList.Desc2
+                    </span>
+                </div>               
+                <div class="det">
+                    <span class="oi">
+                        <i class="fas fa-rocket"></i>         
+                        @productList.Desc3
+                    </span>
+                </div>
+                <div class="det">
+                    <span class="oi">
+                        <i class="fas fa-box-open"></i>
+                        @productList.Desc4
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-footer text-center">
+    <a href="/" class="btn btn-primary">Back</a>
+    <a href="#" class="btn btn-primary">Edit</a>
+    <a href="#" class="btn btn-danger">Delete</a>
+</div>

@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\lenovo\source\repos\timan\timan.vn\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\lenovo\.nuget\packages\blazorise\0.9.4.6\build\..\staticwebassets\" />
+</StaticWebAssets>

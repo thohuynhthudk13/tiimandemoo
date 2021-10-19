@@ -1,0 +1,41 @@
+﻿@page "/editproduct/{id}"
+@inherits EditProductBase
+<h3>EditProduct</h3>
+    
+<EditForm Model="@productList">
+    <h3>EditProduct</h3>
+    <hr />
+    <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">
+            Tên sản phẩm
+        </label>
+        <div class="col-sm-10">
+            <InputText id="name" class="form-control" placeholder="Tên sản phẩm"
+                       @bind-Value="productList.ProductName" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="price" class="col-sm-2 col-form-label">
+            Gía thành
+        </label>
+        <div class="col-sm-10">
+            <InputText id="name" class="form-control" placeholder="Gía sản phẩm"
+                       @bind-Value="productList.Price" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="category" class="col-sm-2 col-form-label">
+            Danh mục
+        </label>
+        <div class="col-sm-10">
+            <InputSelect id="name" class="form-control" 
+                       @bind-Value="cateID" >
+                    @foreach( var cate in Categories)
+                {
+                        <option value="@cate.CategoryID">@cate.CategoryName</option>
+                }
+                </InputSelect>
+        </div>
+    </div>
+
+</EditForm>

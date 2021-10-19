@@ -1,0 +1,37 @@
+﻿
+<div class="all">
+    <div class="containerAll">
+        <div class="headContainer">
+            <div>
+                <a href="/">
+                  
+                     <img src="/images/timan-logo.png" class="navbar-brand logo" />
+                    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </a>
+            </div>
+
+            <div class="searhContainer">
+                <span class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+
+                    <span class="searchbox">
+                        <input type="text" class="search" autocomplete="off" placeholder="Tìm kiếm trên Timan" />
+
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

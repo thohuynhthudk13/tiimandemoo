@@ -1,0 +1,50 @@
+﻿@page "/"
+@inherits ProductBase
+@using System.IO
+<h3>Product</h3>
+@if (Products == null)
+{
+                <div class="spinner"></div>
+}
+else
+{
+<div class="showhere">
+    <div class="detailshow row ">
+        <div class="row colcus col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-4 col-6">
+            @foreach (var product in Products)
+            {
+                <div class="productShow" style="min-width:18rem; max-width:30.5%">
+                    <div class="productThumnail ">
+
+                        <a href=@($"/productdetail/{product.ProductID}") class="imglink">
+                            <img class="imgsource" width="170" height="170"
+                                 src="@product.Photo" alt="Image" />
+                        </a>
+                        <div class="priceP">@product.Price</div>
+                    </div>
+                    <div class="ProContent">
+                        <a class="contentin" href=@($"/productdetail/{product.ProductID}")>@product.ProductName</a>
+                    </div>
+                    <div class="starcontent">
+                        <i class="fas fa-star fas1 starDe"></i>
+                        <i class="fas fa-star fas1 starDe"></i>
+                        <i class="fas fa-star fas1 starDe"></i>
+                        <i class="fas fa-star fas1 starDe"></i>
+                        <i class="fas fa-star-half fas1 starH"></i>
+
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href=@($"/productdetail/{product.ProductID}") class="btn-light m-1">View</a>
+                        <a href="@($"/editproduct/{product.ProductID}")" class="btn-light m-1">Edit</a>
+                        <a href="#" class="btn-light m-1">Delete</a>
+
+
+                    </div>
+
+                </div>
+
+            }
+        </div>
+    </div>
+</div>
+}

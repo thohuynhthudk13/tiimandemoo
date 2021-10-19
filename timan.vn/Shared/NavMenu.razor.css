@@ -1,0 +1,116 @@
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.logo{
+    display:block;
+}
+.all {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    line-height: 14px;
+    min-height: 40px;
+    position: relative;
+}
+
+.containerAll {
+    width: 100%;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headContainer {
+    display: flex;
+   // flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+.searhContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //width: calc(100% - 140px);
+    width:70%;
+}
+.searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.search {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0 10px 0 13px;
+    width: 100%;
+    height: 35px;
+
+}
+
+.navbar-brand {
+    font-size: 1.1rem;
+    width:220px;
+}
+
+.oi {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item ::deep a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item ::deep a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item ::deep a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .collapse {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

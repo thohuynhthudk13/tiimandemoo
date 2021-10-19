@@ -1,0 +1,198 @@
+/* _content/timan.vn/Shared/MainLayout.razor.rz.scp.css */
+.page[b-ozoa9xymzr] {
+    //position: relative;
+    display: flex;
+
+}
+
+.main[b-ozoa9xymzr] {
+    flex: 15;
+}
+
+.sidebar[b-ozoa9xymzr] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 50%, #3a0647 70%);
+    display:flex
+}
+
+.top-row[b-ozoa9xymzr] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-ozoa9xymzr]  a, .top-row .btn-link[b-ozoa9xymzr] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-ozoa9xymzr] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-ozoa9xymzr] {
+        display: none;
+    }
+
+    .top-row.auth[b-ozoa9xymzr] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-ozoa9xymzr], .top-row .btn-link[b-ozoa9xymzr] {
+        margin-left: 0;
+    }
+}
+.topHead[b-ozoa9xymzr] {
+    display: flex;
+   // flex-wrap: 100%;
+   width:100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media (min-width: 641px) {
+    .page[b-ozoa9xymzr] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-ozoa9xymzr] {
+        width: 100%;
+        height: contain;
+        position: relative;
+        top: 0;
+    }
+
+    .top-row[b-ozoa9xymzr] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .main > div[b-ozoa9xymzr] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/timan.vn/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-59umt27eld] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.logo[b-59umt27eld]{
+    display:block;
+}
+.all[b-59umt27eld] {
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    line-height: 14px;
+    min-height: 40px;
+    position: relative;
+}
+
+.containerAll[b-59umt27eld] {
+    width: 100%;
+    padding-left:10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.headContainer[b-59umt27eld] {
+    display: flex;
+   // flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.top-row[b-59umt27eld] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+.searhContainer[b-59umt27eld] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //width: calc(100% - 140px);
+    width:70%;
+}
+.searchbox[b-59umt27eld] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.search[b-59umt27eld] {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    line-height: 1;
+    padding: 0 10px 0 13px;
+    width: 100%;
+    height: 35px;
+
+}
+
+.navbar-brand[b-59umt27eld] {
+    font-size: 1.1rem;
+    width:220px;
+}
+
+.oi[b-59umt27eld] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-59umt27eld] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-59umt27eld] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-59umt27eld] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-59umt27eld]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-59umt27eld]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-59umt27eld]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-59umt27eld] {
+        display: none;
+    }
+
+    .collapse[b-59umt27eld] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}

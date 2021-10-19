@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\depquaingang.jpg" />
+    <None Include="wwwroot\images\Giay.jpg" />
+    <None Include="wwwroot\images\giaydanam.png" />
+    <None Include="wwwroot\images\giaydanamm.jpg" />
+    <None Include="wwwroot\images\giaythethonu.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blazorise.Icons.FontAwesome" Version="0.9.4.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\timan.models\timan.models.csproj" />
+  </ItemGroup>
+
+</Project>

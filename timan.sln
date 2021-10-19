@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "timan.vn", "timan.vn\timan.vn.csproj", "{708A6B19-CF0E-4BA7-8B4B-0C19E2A12C9A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "timan.api", "timan.api\timan.api.csproj", "{C7F683D2-D7C0-490B-9C04-D80EB435DC3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "timan.models", "timan.models\timan.models.csproj", "{06AAF4E1-5870-4201-8618-9D4BA3DBEAC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{708A6B19-CF0E-4BA7-8B4B-0C19E2A12C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708A6B19-CF0E-4BA7-8B4B-0C19E2A12C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708A6B19-CF0E-4BA7-8B4B-0C19E2A12C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708A6B19-CF0E-4BA7-8B4B-0C19E2A12C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7F683D2-D7C0-490B-9C04-D80EB435DC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F683D2-D7C0-490B-9C04-D80EB435DC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F683D2-D7C0-490B-9C04-D80EB435DC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F683D2-D7C0-490B-9C04-D80EB435DC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06AAF4E1-5870-4201-8618-9D4BA3DBEAC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06AAF4E1-5870-4201-8618-9D4BA3DBEAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06AAF4E1-5870-4201-8618-9D4BA3DBEAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06AAF4E1-5870-4201-8618-9D4BA3DBEAC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A36EBF0-D8C9-4776-A1D6-7237F60E6573}
+	EndGlobalSection
+EndGlobal
